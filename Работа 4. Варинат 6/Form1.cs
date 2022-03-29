@@ -21,12 +21,12 @@ namespace Работа_4.Варинат_6
             // Считывание начальных данных
             double x0 = Convert.ToDouble(textBox1.Text);
             double xk = Convert.ToDouble(textBox2.Text);
-            double dx = Convert.ToDouble(textBox1.Text);
-            double b = Convert.ToDouble(textBox1.Text);
+            double dx = Convert.ToDouble(textBox3.Text);
+            double b = Convert.ToDouble(textBox4.Text);
             textBox5.Text = "Работу выполнил ст. Червинский А.Ю." + Environment.NewLine;
             // Цикл для табулирования функции
             double x = x0;
-            while (x <= (xk + dx / 2))
+            while (x >= (xk + dx / 2))
             {
                 double y = Math.Pow(x,2) + Math.Tan(5*x + b/x);
                 textBox5.Text += "x=" + Convert.ToString(x) +
